@@ -1,0 +1,47 @@
+.page-panel {
+  margin-top: 110px;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--cream-2);
+}
+
+.gallery-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-card strong {
+  display: block;
+  padding: 12px;
+}
+
+.policy-layout {
+  display: grid;
+  gap: 16px;
+}
+
+.policy-list {
+  display: grid;
+  gap: 8px;
+}
+
+.policy-list button {
+  text-align: left;
+}
+
+.policy-content {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--cream-2);
+  padding: 16px;
+}

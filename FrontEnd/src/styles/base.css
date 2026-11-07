@@ -1,0 +1,69 @@
+:root {
+  --coffee: #20150f;
+  --coffee-2: #2d1e16;
+  --cream: #f7f1ea;
+  --cream-2: #fffaf4;
+  --tan: #c88b54;
+  --tan-dark: #9b6537;
+  --ink: #1e1712;
+  --muted: #716257;
+  --line: #eadfd4;
+}
+
+main {
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--tan);
+  color: #ffffff;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--tan-dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #d7c6b8;
+  border-radius: 4px;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 12px;
+}
+
+textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.secondary,
+.text-button {
+  background: #efe3d8;
+  color: var(--ink);
+}
+
+.wide {
+  width: 100%;
+}

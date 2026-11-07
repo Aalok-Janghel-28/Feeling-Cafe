@@ -1,0 +1,153 @@
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px clamp(18px, 5vw, 72px);
+  color: #ffffff;
+  background: linear-gradient(180deg, rgba(12, 8, 5, 0.92), rgba(12, 8, 5, 0.3));
+}
+
+.brand {
+  display: inline-grid;
+  gap: 0;
+  min-height: auto;
+  background: transparent;
+  color: #ffffff;
+  padding: 0;
+  line-height: 1;
+}
+
+.brand:hover,
+.site-footer button:hover {
+  background: transparent;
+}
+
+.brand-mark,
+.footer-brand {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #f0c287;
+}
+
+.brand > span:last-child {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 2vw, 22px);
+  overflow-x: auto;
+}
+
+nav button {
+  min-height: auto;
+  background: transparent;
+  color: #ffffff;
+  padding: 8px 4px;
+  white-space: nowrap;
+}
+
+nav .nav-order {
+  background: var(--tan);
+  padding-inline: 16px;
+}
+
+.notice {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 30;
+  border-radius: 4px;
+  background: var(--coffee);
+  color: #ffffff;
+  box-shadow: 0 16px 40px rgba(32, 21, 15, 0.28);
+}
+
+.site-footer {
+  display: grid;
+  gap: 28px;
+  margin-top: 56px;
+  padding: 44px clamp(18px, 6vw, 88px);
+  background: var(--coffee);
+  color: #d9c8b8;
+}
+
+.site-footer h3 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.site-footer p {
+  margin: 0 0 8px;
+  color: #d9c8b8;
+}
+
+.site-footer button {
+  display: block;
+  min-height: auto;
+  background: transparent;
+  color: #d9c8b8;
+  padding: 0 0 8px;
+  text-align: left;
+}
+
+.about-section,
+.category-section,
+.bestseller-section,
+.testimonial-section,
+.panel,
+.checkout-layout,
+.section-heading,
+.filters {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 120px;
+  margin-bottom: 16px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.compact {
+  width: 100%;
+  margin: 0 0 14px;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+  margin-top: 96px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(32, 21, 15, 0.07);
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.05;
+}

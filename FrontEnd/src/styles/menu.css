@@ -1,0 +1,106 @@
+.filters {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 18px;
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+  padding-bottom: 28px;
+  text-align: left;
+}
+
+.menu-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(32, 21, 15, 0.08);
+}
+
+.menu-card img {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+  object-fit: cover;
+  background: #eadfd4;
+}
+
+.menu-card > div {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+}
+
+.menu-card span,
+.cart-line span,
+.order-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.menu-card h3 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.menu-card p {
+  min-height: 44px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.review-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 4px;
+  background: #fff4de;
+  padding: 8px 10px;
+}
+
+.card-footer,
+.total-row,
+.cart-line,
+.order-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.cart-line,
+.total-row {
+  padding-block: 10px;
+  border-bottom: 1px solid #f0e6d8;
+}
+
+.cart-line > div {
+  display: grid;
+  gap: 4px;
+}
+
+.stepper {
+  display: grid;
+  grid-template-columns: 38px 34px 38px;
+  align-items: center;
+  text-align: center;
+}
+
+.stepper button {
+  width: 38px;
+  min-height: 38px;
+  padding: 0;
+}

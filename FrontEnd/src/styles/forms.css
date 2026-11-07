@@ -1,0 +1,119 @@
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.auth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.map-box,
+.payment-note,
+.upi-payment-box {
+  display: grid;
+  gap: 8px;
+  border: 1px dashed #cdbca7;
+  border-radius: 4px;
+  padding: 12px;
+  background: var(--cream-2);
+}
+
+.map-picker {
+  overflow: hidden;
+  height: 260px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.map-picker .leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.map-marker {
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(200, 139, 84, 0.24);
+}
+
+.map-marker span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  background: var(--tan);
+  box-shadow: 0 6px 18px rgba(32, 21, 15, 0.35);
+}
+
+.map-box p,
+.payment-note,
+.upi-payment-box p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.upi-payment-box img,
+.upi-placeholder {
+  width: min(220px, 100%);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.upi-payment-box img {
+  object-fit: contain;
+}
+
+.upi-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  padding: 16px;
+  text-align: center;
+}
+
+.upi-id-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.delivery-ok,
+.delivery-no {
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.delivery-ok {
+  background: #e7f6ed;
+  color: #24584a;
+}
+
+.delivery-no {
+  background: #fde9e4;
+  color: #7d2f22;
+}
+
+.checkout-layout {
+  display: grid;
+  gap: 18px;
+  padding-bottom: 32px;
+}
+
+.grand {
+  font-size: 20px;
+}

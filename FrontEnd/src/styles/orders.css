@@ -1,0 +1,38 @@
+.order-card {
+  width: 100%;
+  min-height: auto;
+  padding-block: 10px;
+  border-bottom: 1px solid #f0e6d8;
+  background: var(--cream-2);
+  color: var(--ink);
+  text-align: left;
+}
+
+.order-card > div {
+  display: grid;
+  gap: 4px;
+}
+
+.order-detail {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.order-detail h3 {
+  margin: 8px 0 0;
+}
+
+.review-box {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #f0e6d8;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.review-form {
+  display: grid;
+  gap: 8px;
+}

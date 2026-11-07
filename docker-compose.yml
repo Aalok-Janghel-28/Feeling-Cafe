@@ -1,0 +1,58 @@
+services:
+  backend:
+    build:
+      context: ./BackEnd
+    env_file:
+      - .env
+    environment:
+      USE_POSTGRES: "True"
+      USE_REDIS: "True"
+      POSTGRES_HOST: db
+      REDIS_URL: redis://redis:6379/1
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - staticfiles:/app/staticfiles
+      - media:/app/media
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./FrontEnd
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.29-alpine
+    depends_on:
+      - backend
+      - frontend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - staticfiles:/staticfiles:ro
+      - media:/media:ro
+    restart: unless-stopped
+
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-FeelingCafe}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:8-alpine
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  staticfiles:
+  media:
