@@ -1,4 +1,5 @@
 .env
+.env.example
 *.sqlite3
 media/
 staticfiles/
